@@ -15,7 +15,7 @@ before_script:
   - psql -c 'create extension postgis' -U postgres -d raster_test
 
 install:
-  - pip install django==1.10
+  - pip install https://github.com/geodesign/django/archive/geodesign_v6.1.tar.gz
   - pip install psycopg2==2.5.3
   - pip install celery==4.0.2
   - pip install numpy
